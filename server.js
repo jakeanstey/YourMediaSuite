@@ -11,8 +11,8 @@ app.get('/', (req, res) => {
 })
 
 https.createServer({
-  key: fs.readFileSync('server.key'),
-  cert: fs.readFileSync('server.cert')}, 
+  key: fs.readFileSync('data/server.key'),
+  cert: fs.readFileSync('data/server.cert')}, 
   app).listen(443, () => {
   console.log('Listening...')
 })
